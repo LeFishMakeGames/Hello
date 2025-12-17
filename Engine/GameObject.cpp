@@ -1,6 +1,6 @@
 #include "GameObject.h"
 
-
+#include "Component.h"
 Transform* GameObject::getTransform()
 {
     return transform;
