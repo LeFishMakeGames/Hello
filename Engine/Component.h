@@ -1,5 +1,8 @@
 #pragma once
-#include "GameObject.h"
+#include <iostream>
+#include <string>              // Pour std::string
+#include <SFML/Graphics.hpp>   // Pour sf::RenderWindow, sf::Sprite, etc.
+#include <SFML/Audio.hpp>      // Pour sf::Sound, sf::SoundBuffer
 
 class GameObject;
 

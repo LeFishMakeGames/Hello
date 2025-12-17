@@ -1,5 +1,2 @@
 ﻿  Game.cpp
-C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Game\Game.cpp(7,5): error C2065: 'SpriteRenderer' : identificateur non déclaré
-C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Game\Game.cpp(7,21): error C2065: 'sr' : identificateur non déclaré
-C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Game\Game.cpp(7,30): error C2061: erreur de syntaxe : identificateur 'SpriteRenderer'
-C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Game\Game.cpp(8,25): error C2065: 'sr' : identificateur non déclaré
+  Game.vcxproj -> C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\x64\Debug\Game.exe

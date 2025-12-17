@@ -1,6 +1,10 @@
 #pragma once
 #include "Engine.h"
 #include "Transform.h"
+#include "Component.h"
+
+#include <string>          // AJOUTE ÇA par sécurité
+#include <vector>
 
 // IMPORTANT : On n'inclut PAS "Component.h" ici pour éviter la boucle infinie.
 // On dit juste au compilateur que la classe Component existe.

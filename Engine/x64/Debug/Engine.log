@@ -1,9 +1,93 @@
 ﻿  AudioManager.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,12): error C3646: 'direction' : spécificateur de substitution inconnu
+  (compiler le fichier source 'AudioManager.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'AudioManager.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,12): error C3646: 'getDirection' : spécificateur de substitution inconnu
+  (compiler le fichier source 'AudioManager.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,24): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'AudioManager.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,26): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'AudioManager.cpp')
+  
   Component.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,12): error C3646: 'direction' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Component.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Component.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,12): error C3646: 'getDirection' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Component.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,24): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Component.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,26): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Component.cpp')
+  
   GameObject.cpp
   Player.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,12): error C3646: 'direction' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Player.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'Player.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,12): error C3646: 'getDirection' : spécificateur de substitution inconnu
+  (compiler le fichier source 'Player.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,24): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'Player.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,26): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'Player.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(16,19): error C2039: 'getDirection' n'est pas membre de 'Player'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(53,7):
+      voir la déclaration de 'Player'
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(18,9): error C2065: 'direction' : identificateur non déclaré
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(27,3): error C2065: 'direction' : identificateur non déclaré
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(32,3): error C2065: 'direction' : identificateur non déclaré
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(37,3): error C2065: 'direction' : identificateur non déclaré
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(42,3): error C2065: 'direction' : identificateur non déclaré
   Scene.cpp
   SceneModule.cpp
   SpriteRenderer.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,12): error C3646: 'direction' : spécificateur de substitution inconnu
+  (compiler le fichier source 'SpriteRenderer.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(56,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'SpriteRenderer.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,12): error C3646: 'getDirection' : spécificateur de substitution inconnu
+  (compiler le fichier source 'SpriteRenderer.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,24): error C2059: erreur de syntaxe : '('
+  (compiler le fichier source 'SpriteRenderer.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(59,26): error C2238: jetons inattendus avant ';'
+  (compiler le fichier source 'SpriteRenderer.cpp')
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(32,9): error C2039: 'getDirection' n'est pas membre de 'Player'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(53,7):
+      voir la déclaration de 'Player'
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(41,14): error C2039: 'getDirection' n'est pas membre de 'Player'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(53,7):
+      voir la déclaration de 'Player'
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(50,14): error C2039: 'getDirection' n'est pas membre de 'Player'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(53,7):
+      voir la déclaration de 'Player'
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(59,14): error C2039: 'getDirection' n'est pas membre de 'Player'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(53,7):
+      voir la déclaration de 'Player'
+  
   Génération de code en cours...
-  Engine.vcxproj -> C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\x64\Debug\Engine.lib
