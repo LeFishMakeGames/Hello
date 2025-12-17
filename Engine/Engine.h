@@ -5,13 +5,7 @@
 #include <vector>
 #include <iostream>
 
-enum class Direction
-{
-	Up, Down, Left, Right
-};
-
-
-
+// SUPPRIME L'ENUM DIRECTION D'ICI (il est maintenant dans Component.h)
 
 class Engine
 {

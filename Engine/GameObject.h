@@ -1,14 +1,8 @@
 #pragma once
-#include "Engine.h"
 #include "Transform.h"
-#include "Component.h"
-
-#include <string>          // AJOUTE ÇA par sécurité
+#include "Component.h" // Inclut maintenant Direction, SFML et string
 #include <vector>
-
-// IMPORTANT : On n'inclut PAS "Component.h" ici pour éviter la boucle infinie.
-// On dit juste au compilateur que la classe Component existe.
-class Component;
+#include <string>      // Toujours bon d'être explicite
 
 class GameObject
 {
@@ -16,19 +10,15 @@ private:
     std::string name;
     bool active;
     Transform* transform;
-
-    // CORRECTION : On stocke des POINTEURS de composants (*)
     std::vector<Component*> components;
 
 public:
-    Transform* getTransform(); // Renvoie un pointeur
-
+    Transform* getTransform();
     Component* AddComponent(Component* component);
 
     template<typename T>
     T* GetComponent()
     {
-        // CORRECTION : La boucle doit parcourir des pointeurs
         for (Component* component : components)
         {
             T* casted_component = dynamic_cast<T*>(component);

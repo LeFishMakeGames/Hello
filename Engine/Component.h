@@ -1,18 +1,27 @@
 #pragma once
+// 1. On inclut les bibliothèques indispensables ici
 #include <iostream>
-#include <string>              // Pour std::string
-#include <SFML/Graphics.hpp>   // Pour sf::RenderWindow, sf::Sprite, etc.
-#include <SFML/Audio.hpp>      // Pour sf::Sound, sf::SoundBuffer
+#include <string>
+#include <vector>
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
+// 2. On déclare GameObject pour éviter la boucle d'include
 class GameObject;
 
+// 3. On déplace l'enum Direction ICI pour que tout le monde puisse l'utiliser facilement
+enum class Direction
+{
+	Up, Down, Left, Right
+};
+
 class Component
-{	
+{
 protected:
 	GameObject* owner;
 
 public:
-	void setOwner(GameObject *o);
+	void setOwner(GameObject* o);
 	virtual void Start();
 	virtual void Update();
 	virtual void Render(sf::RenderWindow& window);
