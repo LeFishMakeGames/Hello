@@ -14,8 +14,8 @@ private:
 
 public:
 	sf::RenderWindow& getWindow() { return window; }
-	Scene(std::string name, sf::Vector2f size);
-	void AddGameObject(GameObject obj);
+	Scene(std::string name, sf::Vector2u size);
+	void AddGameObject(GameObject& obj);
 	void Start();
 	void Update();
 	void Render();

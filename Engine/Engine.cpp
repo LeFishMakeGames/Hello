@@ -9,3 +9,8 @@ void Engine::Update()
 {
 	sceneModule.Update();
 }
+
+Engine::Engine()
+{
+
+}

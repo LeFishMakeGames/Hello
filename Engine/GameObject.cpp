@@ -1,9 +1,9 @@
 #include "GameObject.h"
 
-#include "Component.h"
+
 Transform* GameObject::getTransform()
 {
-    return transform;
+	return transform;
 }
 
 void GameObject::Start()
@@ -44,17 +44,4 @@ Component* GameObject::AddComponent(Component* component)
     component->setOwner(this);
     components.push_back(component);
     return component;
-}
-
-void GameObject::Destroy()
-{
-    // Appelle Destroy sur tous les composants pour faire le ménage
-    for (Component* component : components)
-    {
-        if (component != nullptr)
-        {
-            component->Destroy();
-        }
-    }
-    // Si tes composants sont des pointeurs (Component*), c'est ici qu'on ferait le nettoyage mémoire (delete) plus tard.
 }

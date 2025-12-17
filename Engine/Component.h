@@ -1,31 +1,18 @@
 #pragma once
-// 1. On inclut les bibliothèques indispensables ici
-#include <iostream>
-#include <string>
-#include <vector>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
+#include "GameObject.h"
 
-// 2. On déclare GameObject pour éviter la boucle d'include
 class GameObject;
 
-// 3. On déplace l'enum Direction ICI pour que tout le monde puisse l'utiliser facilement
-enum class Direction
-{
-	Up, Down, Left, Right
-};
-
 class Component
-{
+{	
 protected:
 	GameObject* owner;
 
 public:
-	void setOwner(GameObject* o);
-	virtual void Start();
-	virtual void Update();
-	virtual void Render(sf::RenderWindow& window);
-	virtual void Destroy();
+	void setOwner(GameObject *o);
+	virtual void Start() = 0;
+	virtual void Update() = 0;
+	virtual void Render(sf::RenderWindow& window) = 0;
 };
 
 
@@ -39,6 +26,7 @@ private:
 	sf::Clock animationClock;
 
 public:
+	SpriteRenderer();
 	SpriteRenderer(std::string s);
 	void Start() override;
 	void Update() override;

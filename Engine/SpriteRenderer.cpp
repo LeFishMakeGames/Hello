@@ -1,5 +1,10 @@
 #include "Component.h"
-#include "GameObject.h"
+
+SpriteRenderer::SpriteRenderer():
+	sprite(texture)
+{
+
+}
 
 SpriteRenderer::SpriteRenderer(std::string s) :
 	sprite(texture)
@@ -22,7 +27,7 @@ void SpriteRenderer::Update()
 	float scale_y = owner->getTransform()->scale_y;
 	sprite.setPosition({ x,y });
 	sprite.setScale({ scale_x,scale_y });
-
+	
 }
 
 

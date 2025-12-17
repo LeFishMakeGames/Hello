@@ -4,8 +4,15 @@
 #include "SceneModule.h"
 #include <vector>
 #include <iostream>
+#include <string>
 
-// SUPPRIME L'ENUM DIRECTION D'ICI (il est maintenant dans Component.h)
+enum class Direction
+{
+	Up, Down, Left, Right
+};
+
+
+
 
 class Engine
 {
@@ -13,6 +20,7 @@ private:
 	SceneModule sceneModule;
 	static Engine* instance;
 public:
+	Engine();
 	static Engine* GetInstance() { return instance; }
 	SceneModule getSceneModule() { return sceneModule; }
 	void Init();
