@@ -17,7 +17,7 @@ private:
     std::vector<Component> components;
 public:
 
-    Transform getTransform();
+    Transform* getTransform();
     Component* AddComponent(Component* component);
 
     template<typename T>

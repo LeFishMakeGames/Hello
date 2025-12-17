@@ -1,5 +1,4 @@
-﻿  Game.cpp
-sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'sfml-window-s-d.lib(Window.cpp.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
+﻿sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'sfml-window-s-d.lib(Window.cpp.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
 sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'sfml-window-s-d.lib(GlResource.cpp.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
 sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'sfml-window-s-d.lib(GlContext.cpp.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
 sfml-window-s-d.lib(WindowBase.cpp.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'sfml-window-s-d.lib(WindowBase.cpp.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
