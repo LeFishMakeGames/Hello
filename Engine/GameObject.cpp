@@ -3,7 +3,7 @@
 
 Transform* GameObject::getTransform()
 {
-	return transform;
+    return transform;
 }
 
 void GameObject::Start()
@@ -37,4 +37,11 @@ void GameObject::Render(sf::RenderWindow& window)
             component->Render(window);
         }
     }
+}
+
+Component* GameObject::AddComponent(Component* component)
+{
+    component->setOwner(this);
+    components.push_back(component);
+    return component;
 }

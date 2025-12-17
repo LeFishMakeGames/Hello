@@ -1,11 +1,161 @@
 ﻿  AudioManager.cpp
   Component.cpp
-  Engine.cpp
   GameObject.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(5,1): error C2556: 'Transform *GameObject::getTransform(void)' : la fonction surchargée ne diffère que par le type de retour de 'Transform GameObject::getTransform(void)'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.h(20,15):
+      voir la déclaration de 'GameObject::getTransform'
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(4,24): error C2040: 'GameObject::getTransform' : les niveaux d'indirection de 'Transform *(void)' et de 'Transform (void)' sont différents
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(11,43): error C2440: 'initialisation' : impossible de convertir de 'Component' en 'Component *'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(11,43):
+      Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(22,43): error C2440: 'initialisation' : impossible de convertir de 'Component' en 'Component *'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(22,43):
+      Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(33,43): error C2440: 'initialisation' : impossible de convertir de 'Component' en 'Component *'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(33,43):
+      Aucun opérateur de conversion définie par l'utilisateur disponible qui puisse effectuer cette conversion, ou l'opérateur ne peut pas être appelé
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,15): error C2665: 'std::vector<Component,std::allocator<Component>>::push_back' : aucune fonction surchargée n’a pu convertir tous les types d’arguments.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(874,23):
+      est peut-être 'void std::vector<Component,std::allocator<Component>>::push_back(_Ty &&)'
+          with
+          [
+              _Ty=Component
+          ]
+          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,15):
+          'void std::vector<Component,std::allocator<Component>>::push_back(_Ty &&)' : impossible de convertir l'argument 1 de 'Component *' en '_Ty &&'
+          with
+          [
+              _Ty=Component
+          ]
+              C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+              Raison : impossible de convertir de 'Component *' en '_Ty'
+          with
+          [
+              _Ty=Component
+          ]
+              C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+              'Component::Component' : aucune fonction surchargée n’a pu convertir tous les types d’arguments.
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(17,1):
+                  est peut-être 'Component::Component(Component &&)'
+                      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                      'Component::Component(Component &&)' : impossible de convertir l'argument 1 de 'Component *' en 'Component &&'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          Raison : impossible de convertir de 'Component *' en 'Component'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          La conversion requiert un second constructeur ou opérateur de conversion défini par l'utilisateur
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(17,1):
+                  ou       'Component::Component(const Component &)'
+                      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                      'Component::Component(const Component &)' : impossible de convertir l'argument 1 de 'Component *' en 'const Component &'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          Raison : impossible de convertir de 'Component *' en 'const Component'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          La conversion requiert un second constructeur ou opérateur de conversion défini par l'utilisateur
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                  lors de la tentative de mise en correspondance de la liste des arguments '(Component *)'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(870,23):
+      ou       'void std::vector<Component,std::allocator<Component>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Component
+          ]
+          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,15):
+          'void std::vector<Component,std::allocator<Component>>::push_back(const _Ty &)' : impossible de convertir l'argument 1 de 'Component *' en 'const _Ty &'
+          with
+          [
+              _Ty=Component
+          ]
+              C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+              Raison : impossible de convertir de 'Component *' en 'const _Ty'
+          with
+          [
+              _Ty=Component
+          ]
+              C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+              'Component::Component' : aucune fonction surchargée n’a pu convertir tous les types d’arguments.
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(17,1):
+                  est peut-être 'Component::Component(Component &&)'
+                      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                      'Component::Component(Component &&)' : impossible de convertir l'argument 1 de 'Component *' en 'Component &&'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          Raison : impossible de convertir de 'Component *' en 'Component'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          La conversion requiert un second constructeur ou opérateur de conversion défini par l'utilisateur
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Component.h(17,1):
+                  ou       'Component::Component(const Component &)'
+                      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                      'Component::Component(const Component &)' : impossible de convertir l'argument 1 de 'Component *' en 'const Component &'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          Raison : impossible de convertir de 'Component *' en 'const Component'
+                          C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                          La conversion requiert un second constructeur ou opérateur de conversion défini par l'utilisateur
+                  C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,26):
+                  lors de la tentative de mise en correspondance de la liste des arguments '(Component *)'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\GameObject.cpp(45,15):
+      lors de la tentative de mise en correspondance de la liste des arguments '(Component *)'
+  
   Player.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(26,22): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(26,22):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(26,24): error C2232: '->Transform::y' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(31,22): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(31,22):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(31,24): error C2232: '->Transform::y' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(36,22): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(36,22):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(36,24): error C2232: '->Transform::x' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(41,22): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(41,22):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Player.cpp(41,24): error C2232: '->Transform::x' : opérande gauche avec type 'class', utilisez '.'
   Scene.cpp
   SceneModule.cpp
   SpriteRenderer.cpp
-  Transform.cpp
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(19,31): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(19,31):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(19,33): error C2232: '->Transform::x' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(20,31): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(20,31):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(20,33): error C2232: '->Transform::y' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(21,37): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(21,37):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(21,39): error C2232: '->Transform::scale_x' : opérande gauche avec type 'class', utilisez '.'
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(22,37): error C2819: le type 'Transform' n'a pas d'opérateur 'operator ->' de membre surchargé
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\Transform.h(4,7):
+      voir la déclaration de 'Transform'
+      C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(22,37):
+      voulez-vous utiliser '.' à la place ?
+  
+C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\Engine\SpriteRenderer.cpp(22,39): error C2232: '->Transform::scale_y' : opérande gauche avec type 'class', utilisez '.'
   Génération de code en cours...
-  Engine.vcxproj -> C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\x64\Debug\Engine.lib
