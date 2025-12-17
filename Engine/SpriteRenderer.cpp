@@ -14,7 +14,9 @@ SpriteRenderer::SpriteRenderer(std::string s) :
 
 void SpriteRenderer::Start()
 {
-	sf::Texture texture(texturePath);
+	if (!texture.loadFromFile(texturePath)) {
+		std::cout << "erreur avec le chargement de la texture";
+	}
 	sprite.setTexture(texture);
 	sprite.setTextureRect(sf::IntRect({ 0,0 }, { 64,64 }));
 }
@@ -34,41 +36,44 @@ void SpriteRenderer::Update()
 void SpriteRenderer::Render(sf::RenderWindow& window)
 {
 	Player* p = owner->GetComponent<Player>();
-	if (p->getDirection() == Direction::Up)
-	{
-		if (animationClock.getElapsedTime().asMilliseconds() > 80)
+	if (p != nullptr) {
+		if (p->getDirection() == Direction::Up)
 		{
-			currentFrame = (currentFrame + 1) % 9;
-			sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 0 }, { 64, 64 }));
-			animationClock.restart();
+			if (animationClock.getElapsedTime().asMilliseconds() > 80)
+			{
+				currentFrame = (currentFrame + 1) % 9;
+				sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 0 }, { 64, 64 }));
+				animationClock.restart();
+			}
 		}
-	}
-	else if (p->getDirection() == Direction::Down)
-	{
-		if (animationClock.getElapsedTime().asMilliseconds() > 80)
+		else if (p->getDirection() == Direction::Down)
 		{
-			currentFrame = (currentFrame + 1) % 9;
-			sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 64 }, { 64, 64 }));
-			animationClock.restart();
+			if (animationClock.getElapsedTime().asMilliseconds() > 80)
+			{
+				currentFrame = (currentFrame + 1) % 9;
+				sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 64 }, { 64, 64 }));
+				animationClock.restart();
+			}
 		}
-	}
-	else if (p->getDirection() == Direction::Left)
-	{
-		if (animationClock.getElapsedTime().asMilliseconds() > 80)
+		else if (p->getDirection() == Direction::Left)
 		{
-			currentFrame = (currentFrame + 1) % 9;
-			sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 128 }, { 64, 64 }));
-			animationClock.restart();
+			if (animationClock.getElapsedTime().asMilliseconds() > 80)
+			{
+				currentFrame = (currentFrame + 1) % 9;
+				sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 128 }, { 64, 64 }));
+				animationClock.restart();
+			}
 		}
-	}
-	else if (p->getDirection() == Direction::Right)
-	{
-		if (animationClock.getElapsedTime().asMilliseconds() > 80)
+		else if (p->getDirection() == Direction::Right)
 		{
-			currentFrame = (currentFrame + 1) % 9;
-			sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 192 }, { 64, 64 }));
-			animationClock.restart();
+			if (animationClock.getElapsedTime().asMilliseconds() > 80)
+			{
+				currentFrame = (currentFrame + 1) % 9;
+				sprite.setTextureRect(sf::IntRect({ currentFrame * 64, 192 }, { 64, 64 }));
+				animationClock.restart();
+			}
 		}
+		window.draw(sprite);
 	}
-	window.draw(sprite);
 }
+

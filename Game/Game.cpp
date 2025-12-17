@@ -13,7 +13,7 @@ GameObject createPlayer()
 int main()
 {
 	Engine engine;
-	Scene lvl1("heelo", {800,800});
+	Scene lvl1("heelo", { 800,800 });
 	GameObject player = createPlayer();
 	lvl1.AddGameObject(player);
 

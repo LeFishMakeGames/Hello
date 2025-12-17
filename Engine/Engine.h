@@ -21,8 +21,8 @@ private:
 	static Engine* instance;
 public:
 	Engine();
-	static Engine* GetInstance() { return instance; }
-	SceneModule getSceneModule() { return sceneModule; }
+	static Engine* GetInstance() { return instance;}
+	SceneModule &getSceneModule() { return sceneModule;}
 	void Init();
 	void Start();
 	void Update();

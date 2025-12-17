@@ -1,11 +1,2 @@
-﻿  AudioManager.cpp
-  Component.cpp
-  Engine.cpp
-  GameObject.cpp
-  Player.cpp
-  Scene.cpp
-  SceneModule.cpp
-  SpriteRenderer.cpp
-  Transform.cpp
-  Génération de code en cours...
-  Engine.vcxproj -> C:\Users\cpilat\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\x64\Debug\Engine.lib
+﻿  SpriteRenderer.cpp
+  Engine.vcxproj -> C:\Users\Colin\source\repos\GamingCampus-MillieBourgois-25-26\shoot-em-up-super-awesome-team-name\x64\Debug\Engine.lib
